@@ -7,6 +7,7 @@ class Solution:
           front: An integer which denotes the index of the element at the front of the queue.
           rear: An integer which denotes the index of the element at the rear of the queue.
           size: An integer which represents the size of stack and queue.
+
       """
 
     # Write your code here
@@ -23,6 +24,7 @@ class Solution:
         self.front = -1
 
     def is_stack_empty(self):
+
         """
         Check whether the stack is empty.
         Returns:
@@ -33,6 +35,7 @@ class Solution:
     def is_queue_empty(self):
         """
         Check whether the queue is empty.
+
         Returns:
           True if it is empty, else returns False.
         """
@@ -77,6 +80,7 @@ class Solution:
             self.queue.append(character)
 
     def pop_character(self):
+
         """
         Do pop operation if the stack is not empty.
         Returns:
@@ -127,3 +131,5 @@ for index in range(length_of_text):
 # finally print whether string text is palindrome or not.
 if is_palindrome:
     print("The word, " + text + ", is a palindrome.")
+else:
+    print("The word, " + text + ", is not a palindrome.")
